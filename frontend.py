@@ -458,7 +458,7 @@ with row1_col2:
     
     # Define the button to open EnChroma test in a new tab
     if st.button("🔍 Take Color Blindness Test", key="color_blind_test"):
-        webbrowser.open_new_tab("https://enchroma.com/pages/color-blindness-test")
+        webbrowser.open_new_tab("http://localhost:8081")
         
     # Add custom styling for this button
     st.markdown("""

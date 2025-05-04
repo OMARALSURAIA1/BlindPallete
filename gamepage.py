@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+import webbrowser
 
 # Custom CSS for styling and centering
 st.markdown("""
@@ -103,7 +104,22 @@ else:
 
     if st.button("Retake Test"):
         reset_test()
-
+    if st.button("Go Back to Home", key="color_blind_test"):
+        webbrowser.open_new_tab("http://localhost:8080")
+        
+    # Add custom styling for this button
+    st.markdown("""
+    <style>
+        [data-testid="stButton"][aria-describedby="color_blind_test"] button {
+            background-color: #8B5CF6;
+            border-color: #8B5CF6;
+        }
+        [data-testid="stButton"][aria-describedby="color_blind_test"] button:hover {
+            background-color: #7C3AED;
+            border-color: #7C3AED;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
 # To run:
