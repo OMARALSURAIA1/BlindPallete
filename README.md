@@ -1,6 +1,6 @@
 # 👕🧠 BlindPallet: Colorblind-Friendly Outfit Recommendation using VAE
 
-This project presents a **computer vision-based recommendation system** that suggests matching outfits for colorblind users using **deep learning** and **visual similarity in latent space**.
+This project presents a **computer vision-based recommendation system** that suggests matching outfits for colorblind users using **visual similarity in latent space**.
 
 ---
 
@@ -11,6 +11,15 @@ To build an intelligent outfit recommendation system that:
 - Encodes their **visual style** (especially color),
 - Suggests **aesthetically matching combinations**, even if colors cannot be distinguished by the user,
 - Helps colorblind individuals choose matching outfits confidently.
+
+---
+
+## 🚀 Features
+
+- 🎨 Color Extraction: Extracts dominant colors using KMeans or histogram analysis.
+- 🧩 Latent Space Embedding: Represents each clothing item's color numerically using UMAP.
+- 🤝 Outfit Matching: Recommends matching wardrobe pieces based on color similarity (Euclidean distance).
+- 🕹️ Colorblind Game Page: A small game to simulate colorblind perception.
 
 ---
 
