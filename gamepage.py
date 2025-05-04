@@ -26,7 +26,7 @@ st.markdown("""
   font-size: 1rem;
   width: 100%;
   margin: 1px;
-            }
+}
 /* Nothing button in red */
 .nothing-button .stButton>button {
   background-color: #d62728;
@@ -72,19 +72,29 @@ cur = st.session_state.current
 if cur < total:
     # Display plate image
     st.markdown('<div class="plate-img">', unsafe_allow_html=True)
-    st.image(plates[cur]["path"], use_container_width=False)
+    st.image(plates[cur]["path"], use_column_width=False)
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Restore original numpad layout
+    # 3×3 grid of number buttons
     rows = [["1","2","3"], ["4","5","6"], ["7","8","9"]]
     for row in rows:
         cols = st.columns(3, gap="small")
         for i, num in enumerate(row):
-            cols[i].button(num, key=f"btn_{cur}_{num}", on_click=record_answer, args=(num,))
+            cols[i].button(
+                label=num,
+                key=f"btn_{cur}_{num}",
+                on_click=record_answer,
+                args=(num,)
+            )
 
     # Nothing button
     st.markdown('<div class="nothing-button">', unsafe_allow_html=True)
-    st.button("Nothing", key=f"btn_{cur}_none", on_click=record_answer, args=("Nothing",))
+    st.button(
+        label="Nothing",
+        key=f"btn_{cur}_none",
+        on_click=record_answer,
+        args=("Nothing",)
+    )
     st.markdown('</div>', unsafe_allow_html=True)
 
 else:
@@ -102,27 +112,30 @@ else:
     else:
         st.error("You might be color blind. Consider consulting an eye specialist.")
 
+    # Retake and Back buttons
     if st.button("Retake Test"):
         reset_test()
-    if st.button("Go Back to Home", key="color_blind_test"):
+    if st.button("Go Back to Home", key="go_home"):
         webbrowser.open_new_tab("http://localhost:8080")
-        
-    # Add custom styling for this button
+
+    # Custom styling for the back button
     st.markdown("""
     <style>
-        [data-testid="stButton"][aria-describedby="color_blind_test"] button {
+        [data-testid="stButton"][aria-describedby="go_home"] button {
             background-color: #8B5CF6;
             border-color: #8B5CF6;
         }
-        [data-testid="stButton"][aria-describedby="color_blind_test"] button:hover {
+        [data-testid="stButton"][aria-describedby="go_home"] button:hover {
             background-color: #7C3AED;
             border-color: #7C3AED;
         }
     </style>
     """, unsafe_allow_html=True)
+
+# Close container
 st.markdown('</div>', unsafe_allow_html=True)
 
 # To run:
 # 1. Place 0.png–9.png into a "plates" folder next to this script
 # 2. pip install streamlit
-# 3. streamlit run color_blind_test_app.py
+# 3. streamlit run gamepage.py --server.port 8081
