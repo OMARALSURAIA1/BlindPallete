@@ -1,0 +1,4 @@
+<script>start("c:\\Users\\king7\\OneDrive\\Desktop\\Tuwaiq AI\\CNN_Project\\computer-vision-week-project-blindpalette\\models\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("vae_final.weights.h5","vae_final.weights.h5",0,22524776,"21.5 MB",1746113995,"5/1/25, 6:39:55 PM");</script>
+<script>addRow("vae_full_model.h5","vae_full_model.h5",0,22502040,"21.5 MB",1746272444,"5/3/25, 2:40:44 PM");</script>

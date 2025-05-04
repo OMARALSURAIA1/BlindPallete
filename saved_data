@@ -1,0 +1,16 @@
+<script>start("c:\\Users\\king7\\OneDrive\\Desktop\\Tuwaiq AI\\CNN_Project\\computer-vision-week-project-blindpalette\\saved_data\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("decoder_model.h5","decoder_model.h5",0,5316632,"5.1 MB",1746298995,"5/3/25, 10:03:15 PM");</script>
+<script>addRow("encoder_model.h5","encoder_model.h5",0,17215328,"16.4 MB",1746298995,"5/3/25, 10:03:15 PM");</script>
+<script>addRow("pants_latent_vectors.npy","pants_latent_vectors.npy",0,844544,"825 kB",1746273201,"5/3/25, 2:53:21 PM");</script>
+<script>addRow("pants_latent_vectors2.npy","pants_latent_vectors2.npy",0,840448,"821 kB",1746289875,"5/3/25, 7:31:15 PM");</script>
+<script>addRow("pants_paths.pkl","pants_paths.pkl",0,269878,"264 kB",1746273191,"5/3/25, 2:53:11 PM");</script>
+<script>addRow("pants_paths2.pkl","pants_paths2.pkl",0,321061,"314 kB",1746289864,"5/3/25, 7:31:04 PM");</script>
+<script>addRow("pants_train_images.npy","pants_train_images.npy",0,1297023104,"1.2 GB",1746273187,"5/3/25, 2:53:07 PM");</script>
+<script>addRow("pants_train_images2.npy","pants_train_images2.npy",0,1290731648,"1.2 GB",1746289861,"5/3/25, 7:31:01 PM");</script>
+<script>addRow("tops_latent_vectors.npy","tops_latent_vectors.npy",0,1044480,"1020 kB",1746273201,"5/3/25, 2:53:21 PM");</script>
+<script>addRow("tops_latent_vectors2.npy","tops_latent_vectors2.npy",0,1038976,"1015 kB",1746289875,"5/3/25, 7:31:15 PM");</script>
+<script>addRow("tops_paths.pkl","tops_paths.pkl",0,270134,"264 kB",1746273191,"5/3/25, 2:53:11 PM");</script>
+<script>addRow("tops_paths2.pkl","tops_paths2.pkl",0,455377,"445 kB",1746289864,"5/3/25, 7:31:04 PM");</script>
+<script>addRow("tops_train_images.npy","tops_train_images.npy",0,1604124800,"1.5 GB",1746273191,"5/3/25, 2:53:11 PM");</script>
+<script>addRow("tops_train_images2.npy","tops_train_images2.npy",0,1595670656,"1.5 GB",1746289864,"5/3/25, 7:31:04 PM");</script>
